@@ -11,7 +11,7 @@
             int lastTwoDigits = Math.abs(input1 / 10);
             int lastDigit = Math.abs(lastTwoDigits % 10);
 
-            if (lastDigit < 1) {
+            if (Math.abs(input1 / 10) == 0) {
                 return -1;
             }
             return lastDigit
